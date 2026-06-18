@@ -319,6 +319,27 @@
       font-size: 17px; color: var(--text-2);
       max-width: 560px; margin: 0 auto 32px; line-height: 1.65;
     }
+    .privacy-eyebrow {
+      font-size: 12px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase;
+      color: var(--text-3); margin-bottom: 16px;
+    }
+    .privacy-pills {
+      display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;
+      margin: 28px auto 36px; max-width: 640px;
+    }
+    .ppill {
+      font-size: 13px; color: var(--text-2);
+      background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.12);
+      border-radius: 24px; padding: 7px 16px;
+    }
+    .ppill-check {
+      font-size: 13px; font-weight: 600; color: #34c759;
+      background: rgba(52,199,89,.1); border: 1px solid rgba(52,199,89,.25);
+      border-radius: 24px; padding: 7px 16px;
+    }
+    .privacy-store-note {
+      font-size: 13px; color: var(--text-3); margin-bottom: 28px;
+    }
     .privacy-link {
       color: rgba(255,255,255,.5); font-size: 14px;
       border-bottom: 1px solid rgba(255,255,255,.2); padding-bottom: 1px;
@@ -613,9 +634,17 @@
 
   <!-- ── Privacy ── -->
   <section class="privacy-section reveal">
-    <div style="font-size:48px;margin-bottom:20px">🔒</div>
-    <h2>Your snaps stay yours.</h2>
-    <p>All OCR runs on-device via Apple Vision. All AI runs on-device via MLX. Your images, text, and briefs never touch a server — not ours, not anyone's.</p>
+    <p class="privacy-eyebrow">Privacy</p>
+    <h2>No data collected. Ever.</h2>
+    <p>OCR runs on-device via Apple Vision. AI runs on-device via MLX. Sync goes through your private iCloud container — we have no access to it. No account. No analytics. Nothing leaves your device except to Apple's own servers.</p>
+    <div class="privacy-pills">
+      <span class="ppill">No account required</span>
+      <span class="ppill">On-device OCR &amp; AI</span>
+      <span class="ppill">iCloud sync only</span>
+      <span class="ppill">No analytics or tracking</span>
+      <span class="ppill-check">&#x2713; Data Not Collected</span>
+    </div>
+    <p class="privacy-store-note">Open the App Store privacy label — there's nothing there.</p>
     <a class="privacy-link" href="privacy.html">Privacy Policy →</a>
   </section>
 
